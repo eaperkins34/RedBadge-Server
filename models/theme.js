@@ -4,10 +4,10 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.STRING,
             allowNull: false
         },
-        business: {
-            type: DataTypes.ENUM('Escape This Live Indianapolis', 'Breakout Games-North', 'Breakout Games-South', 'Escape the Room', 'Escape INDY', 'The Escape Room - Indianapolis', 'The Escape Room - Fishers', 'Twisted Room Escapes'),
-            allowNull: false
-        },
+        // businessName: {
+        //     type: DataTypes.ENUM('Escape This Live Indianapolis', 'Breakout Games-North', 'Breakout Games-South', 'Escape the Room', 'Escape INDY', 'The Escape Room - Indianapolis', 'The Escape Room - Fishers', 'Twisted Room Escapes'),
+        //     allowNull: false
+        // },
         description: {
             type: DataTypes.STRING(1000),
             allowNull: false
@@ -20,7 +20,7 @@ module.exports = (sequelize, DataTypes) => {
         },
         difficulty: {
             type: DataTypes.STRING,
-            defaultValue: "not available"
+            defaultValue: "N/A"
         }
     })
 }

@@ -1,5 +1,8 @@
 const router = require('express').Router();
 const Business = require('../db').import('../models/business');
+const Theme = require('../db').import('../models/theme')
+
+Theme.belongsTo(Business);
 
 /*****CREATE NEW BUSINESS****/
 router.post('/create', (req, res) => {
