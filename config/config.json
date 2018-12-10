@@ -1,0 +1,26 @@
+{
+    "development": {
+      "username": "postgres",
+      "password": "emaleigh34",
+      "database": "escapeplan",
+      "host": "localhost",
+      "port": "5432",
+      "dialect": "postgres"
+    },
+    "test": {
+      "username": "postgres",
+      "password": "emaleigh34",
+      "database": "escapeplan",
+      "host": "localhost",
+      "port": "5432",
+      "dialect": "postgres"
+    },
+    "production": {
+      "username": "postgres",
+      "password": "emaleigh34",
+      "database": "escapeplan",
+      "host": "localhost",
+      "port": "5432",
+      "dialect": "postgres"
+    }
+  }

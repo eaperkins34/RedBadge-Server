@@ -1,8 +1,16 @@
 const Sequelize = require('sequelize');
+
 const sequelize = new Sequelize('escapeplan', 'postgres', 'Pierce11', {
     host: 'localhost',
     dialect: 'postgres'
 });
+
+const Theme = sequelize.import('./models/theme.js');
+const Business = sequelize.import('./models/business.js');
+const User = sequelize.import('./models/user')
+
+Theme.belongsTo(Business);
+Business.hasMany(Theme, {as: 'Theme_of_Room'});
 
 sequelize.authenticate()
     .then(
@@ -13,5 +21,6 @@ sequelize.authenticate()
             console.log(err)
         }
     )
+
 
 module.exports = sequelize;
