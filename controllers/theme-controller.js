@@ -44,6 +44,11 @@ router.delete('/delete/:id', (req, res) => {
         .catch(err => res.json(req.errors))
 })
 
+router.get('/', (req, res) => {
+    Theme.findAll()
+    .then(theme => res.status(200).json(theme))
+    .catch(error => res.status(500).json(theme))
+})
 
 module.exports = router;
 

@@ -1,5 +1,9 @@
-module.exports = [
-    {
+'use strict'
+
+
+module.exports = {
+    up: (queryInterface, Sequelize) => {
+        return queryInterface.bulkInsert('Businesses'), [{
         name: "Escape This Live Indianapolis",
         location: "9546 Allisonville Rd #127, Indianapolis< IN 46250",
         phone: "317-435-5595",
@@ -16,7 +20,9 @@ module.exports = [
         themes: [
             'Wizards Escape',
             'Wild Wild West'],
-        image: 'https://static1.squarespace.com/static/55d1efa2e4b0e5d01c225f7b/t/5716d98c1bbee0d40d762607/1461115277948/escapethislive-logo.png?format=1000w'   
+        image: 'https://static1.squarespace.com/static/55d1efa2e4b0e5d01c225f7b/t/5716d98c1bbee0d40d762607/1461115277948/escapethislive-logo.png?format=1000w',
+        createdAt: new Date(),
+        updatedAt: new Date()   
     },
     {
         name: 'Breakout Games - North',
@@ -43,7 +49,9 @@ module.exports = [
             'Operation: Casino', 
             'Island Escape'
         ],
-        image: 'https://2m14st1h0x1b30k8dw3a8fxi-wpengine.netdna-ssl.com/wp-content/themes/fm-framework/images/holidays/breakout-holiday-logo-01.png'
+        image: 'https://2m14st1h0x1b30k8dw3a8fxi-wpengine.netdna-ssl.com/wp-content/themes/fm-framework/images/holidays/breakout-holiday-logo-01.png',
+        createdAt: new Date(),
+        updatedAt: new Date()
     },
     {
         name: 'Breakout Games - South',
@@ -68,7 +76,9 @@ module.exports = [
             'Island Escape', 
             'Hostage'
         ],
-        image: 'https://2m14st1h0x1b30k8dw3a8fxi-wpengine.netdna-ssl.com/wp-content/themes/fm-framework/images/holidays/breakout-holiday-logo-01.png'
+        image: 'https://2m14st1h0x1b30k8dw3a8fxi-wpengine.netdna-ssl.com/wp-content/themes/fm-framework/images/holidays/breakout-holiday-logo-01.png',
+        createdAt: new Date(),
+        updatedAt: new Date()
     },
     {
         name: 'Escape the Room',
@@ -92,7 +102,9 @@ module.exports = [
             'The Apartment', 
             'The Rec Room'
         ],
-        image: 'https://media.escapetheroom.com/indianapolis/wp-content/uploads/sites/10/2017/08/escape-logo-1.png'
+        image: 'https://media.escapetheroom.com/indianapolis/wp-content/uploads/sites/10/2017/08/escape-logo-1.png',
+        createdAt: new Date(),
+        updatedAt: new Date()
     },
     {
         name: 'Escape INDY',
@@ -111,12 +123,14 @@ module.exports = [
         number_of_rooms: 4,
         url: 'https://escape-indy.com/',
         themes: [
-            `Dr. K's Lethal Injection`, 
-            `James Bomb`, 
-            `Asteria's Singularity`, 
-            `Mr. Dupree's Office`
+            "Dr. K's Lethal Injection", 
+            "James Bomb", 
+            "Asteria's Singularity", 
+            "Mr. Dupree's Office"
             ],
-        image: 'https://escape-indy.com/wp-content/themes/escape-indy/images/logo-indy.png'
+        image: 'https://escape-indy.com/wp-content/themes/escape-indy/images/logo-indy.png',
+        createdAt: new Date(),
+        updatedAt: new Date()
     },
     {
         name: 'The Escape Room - Indianapolis' ,
@@ -135,15 +149,17 @@ module.exports = [
         number_of_rooms: 7,
         url: 'https://escaperoomindy.com/',
         themes: [
-            `IU Time Warp 2020`, 
-            `Art Gallery`, 
-            `Bank Heist`, 
-            `Jail Break`, 
-            `KGB Interrogation`, 
-            `Space: 2112`, 
-            `Contagion`
+            "IU Time Warp 2020", 
+            "Art Gallery", 
+            "Bank Heist", 
+            "Jail Break", 
+            "KGB Interrogation", 
+            "Space: 2112", 
+            "Contagion"
         ],
-        image: 'https://escaperoomindy.com/wp-content/uploads/2018/10/escape-room-usa-logo-small.png'
+        image: 'https://escaperoomindy.com/wp-content/uploads/2018/10/escape-room-usa-logo-small.png',
+        createdAt: new Date(),
+        updatedAt: new Date()
     },
     {
         name: 'The Escape Room - Fishers',
@@ -169,7 +185,9 @@ module.exports = [
             'A Night At The Castle', 
             'Escape From The Titanic'
         ],
-        image: 'https://escaperoomindy.com/wp-content/uploads/2018/10/escape-room-usa-logo-small.png'
+        image: 'https://escaperoomindy.com/wp-content/uploads/2018/10/escape-room-usa-logo-small.png',
+        createdAt: new Date(),
+        updatedAt: new Date()
     },
     {
         name: 'Twisted Room Escapes Indianapolis',
@@ -188,13 +206,36 @@ module.exports = [
         number_of_rooms: 5,
         url: 'https://www.twistedroomescapes.com/',
         themes: [
-            `Alice's White Rabbit Rescue`, 
-            `Missing Maestro`, 
-            `The Cabin`, 
-            `Submarine`,
-            `Detective Agency`
+            "Alice's White Rabbit Rescue", 
+            "Missing Maestro", 
+            "The Cabin", 
+            "Submarine",
+            "Detective Agency"
 
         ] ,
-        image: 'https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/47262825_10156885060548501_2617701147216969728_n.jpg?_nc_cat=102&_nc_ht=scontent-ort2-1.xx&oh=507d2c14f777fc110d0f55624c6f7d72&oe=5CAD0A6D'
-    }
-]
+        image: 'https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/47262825_10156885060548501_2617701147216969728_n.jpg?_nc_cat=102&_nc_ht=scontent-ort2-1.xx&oh=507d2c14f777fc110d0f55624c6f7d72&oe=5CAD0A6D',
+        createdAt: new Date(),
+        updatedAt: new Date()
+    }]
+},
+down: (queryInterface, Sequelize) => {
+    return queryInterface.bulkDelete('Themes', null, {})
+}}
+
+
+
+// db.sync()
+//     .then(() => {
+//         console.log('synced db and dropped old data');
+//     })
+//     .then(() => {
+//         return Promise.map(businessData, business => Business.create(business));
+//     })
+//     .catch(err => {
+//         console.error('error!!', err, err.stack);
+//     })
+//     .finally(() => {
+//         db.close();
+//         console.log('Finished');
+//         return null;
+//     });
