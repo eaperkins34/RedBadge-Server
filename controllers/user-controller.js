@@ -46,6 +46,12 @@ router.put('/update/:id', (req, res) => {
     }
 })
 
+router.get('/all', (req, res) => {
+    User.findAll()
+    .then(user => res.status(200).json(user))
+    .catch(err => res.status(500).json(error))
+})
+
 
 
 

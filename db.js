@@ -7,10 +7,10 @@ const sequelize = new Sequelize('escapeplan', 'postgres', 'emaleigh34', {
 
 const Theme = sequelize.import('./models/theme.js');
 const Business = sequelize.import('./models/business.js');
-const User = require('./models/user')
+const User = sequelize.import('./models/user')
 
 Theme.belongsTo(Business);
-Business.hasMany(Theme, {as: 'Themes'});
+Business.hasMany(Theme, {as: 'Theme_of_Room'});
 
 sequelize.authenticate()
     .then(

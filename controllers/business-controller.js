@@ -5,8 +5,7 @@ const Theme = require('../db').import('../models/theme')
 Theme.belongsTo(Business);
 
 /*****CREATE NEW BUSINESS****/
-router.post('/create', (req, res) => {
-   
+router.post('/create', (req, res) => {   
     Business.create({
         name: req.body.business.name,
         location: req.body.business.location,
@@ -31,6 +30,12 @@ router.get('/all', (req, res) => {
     Business.findAll()
         .then(business => res.status(200).json(business))
         .catch(error => res.status(500).json(error))
+})
+
+router.get('/:id', (req, res, next) => {
+    Business.findById(req.params.id)
+        .then(res.send.bind(res))
+        .catch(next);
 })
 
 /*****UPDATE BUSINESS******/

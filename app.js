@@ -4,7 +4,6 @@ require('dotenv').config();
 var express = require('express');
 var bodyParser = require('body-parser');
 var sequelize = require('./db');
-var path = require('path');
 
 /******CONTROLLERS******/
 var business = require('./controllers/business-controller');
@@ -13,7 +12,7 @@ var theme = require('./controllers/theme-controller')
 
 var app = express();
 app.use(bodyParser.json())
-app.use(bodyParser.urlencoded({ extended: true}));
+// app.use(bodyParser.urlencoded({ extended: true}));
 /****ASSOCIATIONS****/
 // var Theme = require('./models/theme')
 // var Business = require('./models/business')

@@ -44,8 +44,8 @@ router.delete('/delete/:id', (req, res) => {
         .catch(err => res.json(req.errors))
 })
 
-router.get('/', (req, res) => {
-    Theme.findAll()
+router.get('/all', (req, res) => {
+    Theme.findAll({include: [{all: true}]})
     .then(theme => res.status(200).json(theme))
     .catch(error => res.status(500).json(theme))
 })
