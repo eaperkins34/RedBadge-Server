@@ -1,8 +1,8 @@
-'use strict';
+// 'use strict';
 module.exports = (sequelize, DataTypes) => {
   const Theme = sequelize.define('Theme', {
     name: DataTypes.STRING,
-    description: DataTypes.STRING,
+    description: DataTypes.STRING(1000),
     minimum: DataTypes.INTEGER,
     maximum: DataTypes.INTEGER,
     length: DataTypes.INTEGER,

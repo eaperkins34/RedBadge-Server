@@ -1,4 +1,5 @@
-'use strict';
+// 'use strict';
+
 module.exports = (sequelize, DataTypes) => {
   const Business = sequelize.define('Business', {
     name: DataTypes.STRING,

@@ -15,8 +15,8 @@ var app = express();
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true}));
 /****ASSOCIATIONS****/
-var Theme = require('./models/theme')
-var Business = require('./models/business')
+// var Theme = require('./models/theme')
+// var Business = require('./models/business')
 
 app.use('/business', business);
 app.use('/user', user);

@@ -1,8 +1,8 @@
-'use strict'
+// 'use strict'
 
 module.exports = {
     up: (queryInterface, Sequelize) => {
-        return queryInterface.bulkInsert('Themes'), [{
+        return queryInterface.bulkInsert('Themes', [{
             name: "Alice's White Rabbit Rescue",
             description:"The famous adventures, Alice Liddell, has asked you to be in charge of house sitting while she's away. This job entails acting on her behalf should some emergency situation arise, and of course taking care of her rabbit. Hours after Alice's departure on the midday train, you arrive to check on her house, but upon entering the parlor, you discover something has gone amiss...Can you save the day by teatime?",
             minimum: 2,
@@ -10,7 +10,7 @@ module.exports = {
             length: 60,
             difficulty: "5",
             createdAt: new Date(),
-            updatedAd: new Date()
+            updatedAt: new Date()
         },
         {
             name: "The Cabin",
@@ -401,7 +401,7 @@ module.exports = {
             difficulty: "8",
             createdAt: new Date(),
             updatedAt: new Date()
-        }]
+        }], {});
     },
     down: (queryInterface, Sequelize) => {
         return queryInterface.bulkDelete('Businesses', null, {})
