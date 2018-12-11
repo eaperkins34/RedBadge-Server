@@ -3,15 +3,7 @@ const Theme = require('../db').import('../models/theme');
 
 /****CREATE NEW THEME*****/
 router.post('/create', (req,res) => {
-    Theme.create({
-        name: req.body.theme.name,
-        business: req.business.name,
-        description: req.body.theme.description,
-        minimum: req.body.theme.minimum,
-        maximum: req.body.theme.maximum,
-        length: req.body.theme.length,
-        difficulty: req.body.theme.difficulty
-    })
+    Theme.create(req.body)
     .then(function(newTheme) {
         res.send(newTheme);
     },
@@ -22,15 +14,7 @@ router.post('/create', (req,res) => {
 
 /****UPDATE THEME****/
 router.put('/update/:id', (req, res) => {
-    Theme.update({
-        name: req.body.theme.name,
-        business: req.business.name,
-        description: req.body.theme.description,
-        minimum: req.body.theme.minimum,
-        maximum: req.body.theme.maximum,
-        length: req.body.theme.length,
-        difficulty: req.body.theme.difficulty},
-        { where: { id: req.params.id }})
+    Theme.update(req.body, { where: { id: req.params.id }})
 
         .then(theme => res.status(200).json(theme))
         .catch(err => res.status(500).json(req.errors))

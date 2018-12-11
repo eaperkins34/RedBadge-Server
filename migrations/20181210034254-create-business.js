@@ -18,7 +18,7 @@ module.exports = {
         type: Sequelize.STRING
       },
       hours: {
-        type: Sequelize.ARRAY(DataTypes.TEXT)
+        type: Sequelize.ARRAY(Sequelize.TEXT)
       },
       price: {
         type: Sequelize.DECIMAL
@@ -30,7 +30,7 @@ module.exports = {
         type: Sequelize.STRING
       },
       themes: {
-        type: Sequelize.ARRAY(DataTypes.TEXT)
+        type: Sequelize.ARRAY(Sequelize.TEXT)
       },
       image: {
         type: Sequelize.STRING
