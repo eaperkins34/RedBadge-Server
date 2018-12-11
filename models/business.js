@@ -15,8 +15,8 @@ module.exports = (sequelize, DataTypes) => {
     image: DataTypes.STRING
   });
 
-  Business.associate = models =>{
-    Business.hasMany(models.theme, { as: 'roomTheme'})
-  };
+  // Business.associate = models =>{
+  //   Business.hasMany(models.theme, { as: 'roomTheme'})
+  // };
   return Business;
 };

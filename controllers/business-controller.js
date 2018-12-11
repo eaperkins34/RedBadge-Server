@@ -2,7 +2,7 @@ const router = require('express').Router();
 const Business = require('../db').import('../models/business');
 const Theme = require('../db').import('../models/theme')
 
-Theme.belongsTo(Business);
+Business.hasMany(Theme, {as: 'Themes'})
 
 /*****CREATE NEW BUSINESS****/
 router.post('/create', (req, res) => {   
@@ -26,6 +26,22 @@ router.get('/:id', (req, res, next) => {
     Business.findById(req.params.id)
         .then(res.send.bind(res))
         .catch(next);
+})
+
+router.get('/:businessId/themes', (req, res) => {
+    Business.findOne({where:{id: req.params.businessId}})
+    // console.log(business)
+    // return(business).then(business => business.getThemes())
+    //     // .then(res.send(business.getTheme()))
+    //     .catch(error => res.status(500).json(error))
+        .then(results => {
+            results.getThemes()})
+            .then(() => {
+                return (res.send(results.getThemes()))
+            })
+        .catch(error => res.status(500).json(error))
+    
+
 })
 
 /*****UPDATE BUSINESS******/

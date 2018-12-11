@@ -11,9 +11,9 @@ module.exports = (sequelize, DataTypes) => {
     length: Sequelize.INTEGER,
     difficulty: Sequelize.STRING
   });
-  Theme.associate = models => {
-    Theme.belongsTo(models['business'])
-  };
+  // Theme.associate = models => {
+  //   Theme.belongsTo(models['business'])
+  // };
 
   return Theme;
 };
