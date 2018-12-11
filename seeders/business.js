@@ -1,8 +1,8 @@
-// 'use strict'
+'use strict'
 
 module.exports = {
     up: (queryInterface, Sequelize) => {
-        return queryInterface.bulkInsert('Businesses', [{
+        return queryInterface.bulkInsert('businesses', [{
         name: "Escape This Live Indianapolis",
         location: "9546 Allisonville Rd #127, Indianapolis< IN 46250",
         phone: "317-435-5595",
@@ -218,7 +218,7 @@ module.exports = {
     }], {});
 },
 down: (queryInterface, Sequelize) => {
-    return queryInterface.bulkDelete('Themes', null, {})
+    return queryInterface.bulkDelete('businesses', null, {})
 }}
 
 

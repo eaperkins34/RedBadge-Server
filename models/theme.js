@@ -1,15 +1,19 @@
-// 'use strict';
+'use strict';
+const Sequelize = require('sequelize')
+const sequelize = require('../db')
+
 module.exports = (sequelize, DataTypes) => {
-  const Theme = sequelize.define('Theme', {
-    name: DataTypes.STRING,
-    description: DataTypes.STRING(1000),
-    minimum: DataTypes.INTEGER,
-    maximum: DataTypes.INTEGER,
-    length: DataTypes.INTEGER,
-    difficulty: DataTypes.STRING
-  }, {});
-  Theme.associate = function(models) {
-    // associations can be defined here
+  const Theme = sequelize.define('theme', {
+    name: Sequelize.STRING,
+    description: Sequelize.STRING(1000),
+    minimum: Sequelize.INTEGER,
+    maximum: Sequelize.INTEGER,
+    length: Sequelize.INTEGER,
+    difficulty: Sequelize.STRING
+  });
+  Theme.associate = models => {
+    Theme.belongsTo(models['business'])
   };
+
   return Theme;
 };

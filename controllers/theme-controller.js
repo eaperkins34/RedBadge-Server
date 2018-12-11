@@ -3,15 +3,7 @@ const Theme = require('../db').import('../models/theme');
 
 /****CREATE NEW THEME*****/
 router.post('/create', (req,res) => {
-    Theme.create({
-        name: req.body.theme.name,
-        business: req.business.name,
-        description: req.body.theme.description,
-        minimum: req.body.theme.minimum,
-        maximum: req.body.theme.maximum,
-        length: req.body.theme.length,
-        difficulty: req.body.theme.difficulty
-    })
+    Theme.create(req.body)
     .then(function(newTheme) {
         res.send(newTheme);
     },

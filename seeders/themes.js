@@ -1,8 +1,8 @@
-// 'use strict'
+'use strict'
 
 module.exports = {
     up: (queryInterface, Sequelize) => {
-        return queryInterface.bulkInsert('Themes', [{
+        return queryInterface.bulkInsert('themes', [{
             name: "Alice's White Rabbit Rescue",
             description:"The famous adventures, Alice Liddell, has asked you to be in charge of house sitting while she's away. This job entails acting on her behalf should some emergency situation arise, and of course taking care of her rabbit. Hours after Alice's departure on the midday train, you arrive to check on her house, but upon entering the parlor, you discover something has gone amiss...Can you save the day by teatime?",
             minimum: 2,
@@ -10,7 +10,8 @@ module.exports = {
             length: 60,
             difficulty: "5",
             createdAt: new Date(),
-            updatedAt: new Date()
+            updatedAt: new Date(),
+            businessId: 8
         },
         {
             name: "The Cabin",
@@ -20,7 +21,8 @@ module.exports = {
             length: 60,
             difficulty: "5",
             createdAt: new Date(),
-            updatedAt: new Date()
+            updatedAt: new Date(),
+            businessId: 8
         },
         {
             name: "Missing Maestro",
@@ -30,7 +32,8 @@ module.exports = {
             length: 60,
             difficulty: "5",
             createdAt: new Date(),
-            updatedAt: new Date()
+            updatedAt: new Date(),
+            businessId: 8
         },
         {
             name: "Submarine",
@@ -40,7 +43,8 @@ module.exports = {
             length: 60,
             difficulty: "8",
             createdAt: new Date(),
-            updatedAt: new Date()
+            updatedAt: new Date(),
+            businessId: 8
         },
         {
             name: "Detective Agency",
@@ -50,7 +54,8 @@ module.exports = {
             length: 60,
             difficulty: "4",
             createdAt: new Date(),
-            updatedAt: new Date()
+            updatedAt: new Date(),
+            businessId: 8
         },
         {
             name: "The Race 1",
@@ -60,7 +65,8 @@ module.exports = {
             length: 60,
             difficulty: "1",
             createdAt: new Date(),
-            updatedAt: new Date()
+            updatedAt: new Date(),
+            businessId: 7
         },
         {
             name: "The Race 2",
@@ -70,7 +76,8 @@ module.exports = {
             length: 60,
             difficulty: "1",
             createdAt: new Date(),
-            updatedAt: new Date()
+            updatedAt: new Date(),
+            businessId: 7
         },
         {
             name: "Stalag 21: American POW",
@@ -80,7 +87,8 @@ module.exports = {
             length: 60,
             difficulty: "10",
             createdAt: new Date(),
-            updatedAt: new Date()
+            updatedAt: new Date(),
+            businessId: 7
         },
         {
             name: "1776",
@@ -90,7 +98,8 @@ module.exports = {
             length: 60,
             difficulty: "6",
             createdAt: new Date(),
-            updatedAt: new Date()
+            updatedAt: new Date(),
+            businessId: 7
         },
         {
             name: "A Night At The Castle",
@@ -100,7 +109,8 @@ module.exports = {
             length: 60,
             difficulty: "5",
             createdAt: new Date(),
-            updatedAt: new Date()
+            updatedAt: new Date(),
+            businessId: 7
         },
         {
             name: "Escape From The Titanic",
@@ -110,7 +120,8 @@ module.exports = {
             length: 60,
             difficulty: "2",
             createdAt: new Date(),
-            updatedAt: new Date()
+            updatedAt: new Date(),
+            businessId: 7
         },
         {
             name: "IU Time Warp 2020",
@@ -120,7 +131,8 @@ module.exports = {
             length: 60,
             difficulty: "5",
             createdAt: new Date(),
-            updatedAt: new Date()
+            updatedAt: new Date(),
+            businessId: 6
         },
         {
             name: "Art Gallery",
@@ -130,7 +142,8 @@ module.exports = {
             length: 60,
             difficulty: "6",
             createdAt: new Date(),
-            updatedAt: new Date()
+            updatedAt: new Date(),
+            businessId: 6
         },
         {
             name: "Bank Heist",
@@ -140,7 +153,8 @@ module.exports = {
             length: 60,
             difficulty: "8",
             createdAt: new Date(),
-            updatedAt: new Date()
+            updatedAt: new Date(),
+            businessId: 6
         },
         {
             name: "Jail Break",
@@ -150,7 +164,8 @@ module.exports = {
             length: 60,
             difficulty: "4",
             createdAt: new Date(),
-            updatedAt: new Date()
+            updatedAt: new Date(),
+            businessId: 6
         },
         {
             name: "KGB Interrogation",
@@ -160,7 +175,8 @@ module.exports = {
             length: 60,
             difficulty: "10",
             createdAt: new Date(),
-            updatedAt: new Date()
+            updatedAt: new Date(),
+            businessId: 6
         },
         {
             name: "Space: 2112",
@@ -170,7 +186,8 @@ module.exports = {
             length: 60,
             difficulty: "8",
             createdAt: new Date(),
-            updatedAt: new Date()
+            updatedAt: new Date(),
+            businessId: 6
         },
         {
             name: "Contagion",
@@ -180,7 +197,8 @@ module.exports = {
             length: 60,
             difficulty: "8",
             createdAt: new Date(),
-            updatedAt: new Date()
+            updatedAt: new Date(),
+            businessId: 6
         },
         {
             name: "Dr. K's Lethal Injection",
@@ -190,7 +208,8 @@ module.exports = {
             length: 60,
             difficulty: "8",
             createdAt: new Date(),
-            updatedAt: new Date()
+            updatedAt: new Date(),
+            businessId: 5
         },
         {
             name: "James Bomb",
@@ -200,7 +219,8 @@ module.exports = {
             length: 60,
             difficulty: "5",
             createdAt: new Date(),
-            updatedAt: new Date()
+            updatedAt: new Date(),
+            businessId: 5
         },
         {
             name: "Asteria's Singularity",
@@ -210,7 +230,8 @@ module.exports = {
             length: 60,
             difficulty: "5",
             createdAt: new Date(),
-            updatedAt: new Date()
+            updatedAt: new Date(),
+            businessId: 5
         },
         {
             name: "Mr. Dupree's Office",
@@ -220,7 +241,8 @@ module.exports = {
             length: 60,
             difficulty: "2",
             createdAt: new Date(),
-            updatedAt: new Date()
+            updatedAt: new Date(),
+            businessId: 5
         },
         {
             name: "The Dig",
@@ -230,7 +252,8 @@ module.exports = {
             length: 60,
             difficulty: "N/A",
             createdAt: new Date(),
-            updatedAt: new Date()
+            updatedAt: new Date(),
+            businessId: 4
         },
         {
             name: "The Agency",
@@ -240,7 +263,8 @@ module.exports = {
             length: 60,
             difficulty: "N/A",
             createdAt: new Date(),
-            updatedAt: new Date()
+            updatedAt: new Date(),
+            businessId: 4
         },
         {
             name: "The Apartment",
@@ -250,7 +274,8 @@ module.exports = {
             length: 60,
             difficulty: "N/A",
             createdAt: new Date(),
-            updatedAt: new Date()
+            updatedAt: new Date(),
+            businessId: 4
         },
         {
             name: "The Rec Room",
@@ -260,7 +285,8 @@ module.exports = {
             length: 60,
             difficulty: "N/A",
             createdAt: new Date(),
-            updatedAt: new Date()
+            updatedAt: new Date(),
+            businessId: 4
         },
         {
             name: "The Kidnapping",
@@ -270,7 +296,8 @@ module.exports = {
             length: 60,
             difficulty: "N/A",
             createdAt: new Date(),
-            updatedAt: new Date()
+            updatedAt: new Date(),
+            businessId: 3
         },
         {
             name: "Operation: Casino",
@@ -280,7 +307,8 @@ module.exports = {
             length: 60,
             difficulty: "N/A",
             createdAt: new Date(),
-            updatedAt: new Date()
+            updatedAt: new Date(),
+            businessId: 3
         },
         {
             name: "Island Escape",
@@ -290,7 +318,8 @@ module.exports = {
             length: 60,
             difficulty: "N/A",
             createdAt: new Date(),
-            updatedAt: new Date()
+            updatedAt: new Date(),
+            businessId: 3
         },
         {
             name: "Museum Heist",
@@ -300,7 +329,8 @@ module.exports = {
             length: 60,
             difficulty: "N/A",
             createdAt: new Date(),
-            updatedAt: new Date()
+            updatedAt: new Date(),
+            businessId: 3
         },
         {
             name: "Hostage",
@@ -310,7 +340,8 @@ module.exports = {
             length: 60,
             difficulty: "N/A",
             createdAt: new Date(),
-            updatedAt: new Date()
+            updatedAt: new Date(),
+            businessId: 3
         },
         {
             name: "Do Not Disturb",
@@ -320,7 +351,8 @@ module.exports = {
             length: 60,
             difficulty: "N/A",
             createdAt: new Date(),
-            updatedAt: new Date()
+            updatedAt: new Date(),
+            businessId: 2
         },
         {
             name: "Kidnapping",
@@ -330,7 +362,8 @@ module.exports = {
             length: 60,
             difficulty: "N/A",
             createdAt: new Date(),
-            updatedAt: new Date()
+            updatedAt: new Date(),
+            businessId: 2
         },
         {
             name: "Island Escape",
@@ -340,7 +373,8 @@ module.exports = {
             length: 60,
             difficulty: "N/A",
             createdAt: new Date(),
-            updatedAt: new Date()
+            updatedAt: new Date(),
+            businessId: 2
         },
         {
             name: "Mystery Mansion",
@@ -350,7 +384,8 @@ module.exports = {
             length: 60,
             difficulty: "N/A",
             createdAt: new Date(),
-            updatedAt: new Date()
+            updatedAt: new Date(),
+            businessId: 2
         },
         {
             name: "Museum Heist",
@@ -360,7 +395,8 @@ module.exports = {
             length: 60,
             difficulty: "N/A",
             createdAt: new Date(),
-            updatedAt: new Date()
+            updatedAt: new Date(),
+            businessId: 2
         },
         {
             name: "Runaway Train",
@@ -370,7 +406,8 @@ module.exports = {
             length: 60,
             difficulty: "N/A",
             createdAt: new Date(),
-            updatedAt: new Date()
+            updatedAt: new Date(),
+            businessId: 2
         },
         {
             name: "Operation: Casino",
@@ -380,7 +417,8 @@ module.exports = {
             length: 60,
             difficulty: "N/A",
             createdAt: new Date(),
-            updatedAt: new Date()
+            updatedAt: new Date(),
+            businessId: 2
         },
         {
             name: "Wizard's Escape",
@@ -390,7 +428,8 @@ module.exports = {
             length: 60,
             difficulty: "7",
             createdAt: new Date(),
-            updatedAt: new Date()
+            updatedAt: new Date(),
+            businessId: 1
         },
         {
             name: "Wild Wild West",
@@ -400,10 +439,11 @@ module.exports = {
             length: 60,
             difficulty: "8",
             createdAt: new Date(),
-            updatedAt: new Date()
+            updatedAt: new Date(),
+            businessId: 1
         }], {});
     },
     down: (queryInterface, Sequelize) => {
-        return queryInterface.bulkDelete('Businesses', null, {})
+        return queryInterface.bulkDelete('themes', null, {})
     }
 }
