@@ -16,6 +16,7 @@ require('./models')
 
 app.use('/business', require('./controllers/business-controller'))
 app.use('/theme', require('./controllers/theme-controller'))
+app.use('/user', require('./controllers/user-controller'))
 
 
 
