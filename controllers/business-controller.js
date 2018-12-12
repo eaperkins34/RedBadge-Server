@@ -20,6 +20,9 @@ router.get('/all', (req, res) => {
     Business.findAll()
         .then(business => res.status(200).json(business))
         .catch(error => res.status(500).json(error))
+       
+        
+        
 })
 
 router.get('/:id', (req, res, next) => {

@@ -8,11 +8,13 @@ const bodyParser = require('body-parser');
 const sequelize = require('./db');
 
 // require('./models')
+sequelize.sync();
+app.use(bodyParser.json())
+app.use(require('./middleware/headers'));
 
 app.use('/business', require('./controllers/business-controller'))
 app.use('/theme', require('./controllers/theme-controller'))
 
-app.use(bodyParser.json())
 
 
 app.listen(PORT, () => {
