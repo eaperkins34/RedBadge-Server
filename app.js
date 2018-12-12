@@ -17,6 +17,6 @@ app.use(bodyParser.json())
 // sequelize.sync();
 sequelize.sync()
 
-app.listen(PORT, () => {
+app.listen0(process.env.PORT, () => {
     console.log(`server is listening on port: ${PORT}`)
 })
