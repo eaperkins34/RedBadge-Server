@@ -15,7 +15,7 @@ app.use('/theme', require('./controllers/theme-controller'))
 app.use(bodyParser.json())
 
 // sequelize.sync();
-sequelize.sync({force:true})
+sequelize.sync()
 
 app.listen(PORT, () => {
     console.log(`server is listening on port: ${PORT}`)
