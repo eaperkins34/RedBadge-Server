@@ -37,13 +37,13 @@ router.get('/:businessId/themes', async(req, res) => {
 })
 
 /*****UPDATE BUSINESS******/
-// router.put('/update/:id', (req, res) => {
-//     if(!req.errors) {
-//         Business.update((req.body),
-//             { where: {id: req.params.id }})
-//             .then(business => res.status(200).json(business))
-//             .catch(err => res.status(500).json(req.errors))
-//     }
-// })
+router.put('/update/:id', (req, res) => {
+    if(!req.errors) {
+        Business.update((req.body),
+            { where: {id: req.params.id }})
+            .then(business => res.status(200).json(business))
+            .catch(err => res.status(500).json(req.errors))
+    }
+})
 
 module.exports = router;
