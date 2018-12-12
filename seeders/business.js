@@ -4,7 +4,7 @@ module.exports = {
     up: (queryInterface, Sequelize) => {
         return queryInterface.bulkInsert('businesses', [{
         name: "Escape This Live Indianapolis",
-        location: "9546 Allisonville Rd #127, Indianapolis< IN 46250",
+        location: "9546 Allisonville Rd #127, Indianapolis, IN 46250",
         phone: "317-435-5595",
         hours: ["Monday: 12PM - 9PM", 
                 "Tuesday: 12PM - 9PM", 
@@ -107,7 +107,7 @@ module.exports = {
     },
     {
         name: "Escape INDY",
-        location: "150 E Market St # 00, Indianapolis, IN 46204",
+        location: "150 E Market St # 100, Indianapolis, IN 46204",
         phone: "317-610-0904",
         hours: [
             "Monday: Closed",

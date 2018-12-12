@@ -52,6 +52,11 @@ router.get('/all', (req, res) => {
     .catch(err => res.status(500).json(error))
 })
 
+router.delete('/delete/:id', (req, res) => {
+    User.destroy({ where: { id: req.params.id }})
+        .then(theme => res.status(200).json(theme))
+        .catch(err => res.json(req.errors))
+})
 
 
 

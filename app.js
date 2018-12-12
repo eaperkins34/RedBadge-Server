@@ -6,7 +6,7 @@ const bodyParser = require('body-parser');
 const sequelize = require('./db');
 //dave added this delete later
 
-sequelize.sync();
+sequelize.sync({force: true});
 // sequelize.sync()
 
 app.use(bodyParser.json())

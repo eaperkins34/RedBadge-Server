@@ -31,7 +31,7 @@ router.get('/:id', (req, res, next) => {
 router.get('/:businessId/themes', async(req, res) => {
     Business.findOne({where:{id: req.params.businessId}})
         .then(business => {
-            business.getRoomThemes()})
+            business.getThemes()})
             .then(res.send)
         .catch(error => res.status(500).json(error))
 })
