@@ -1,5 +1,4 @@
 require('dotenv').config();
-const { PORT } = process.env;
 
 
 const express = require('express');
@@ -18,5 +17,5 @@ app.use(bodyParser.json())
 sequelize.sync()
 
 app.listen0(process.env.PORT, () => {
-    console.log(`server is listening on port: ${PORT}`)
+    console.log(`server is listening on port: ${process.env.PORT}`)
 })
