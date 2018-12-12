@@ -10,7 +10,7 @@ sequelize.authenticate()
             console.log('connected to escapeplan');
         },
         function(err) {
-            console.log(err)
+            console.log(error)
         }
     )
 
