@@ -17,7 +17,7 @@ router.post('/create', (req, res) => {
 
 /******GET ALL BUSINESSES******/
 router.get('/all', (req, res) => {
-    Business.findAll()
+    Business.findAll({include: [{all:true}]})
         .then(business => res.status(200).json(business))
         .catch(error => res.status(500).json(error))
 })
@@ -29,10 +29,8 @@ router.get('/:id', (req, res, next) => {
 })
 
 router.get('/:businessId/themes', async(req, res) => {
-    Business.findOne({where:{id: req.params.businessId}})
-        .then(business => {
-            business.getThemes()})
-            .then(res.send)
+    Business.findOne({where:{id: req.params.businessId}, include: [{all:true}]})
+        .then(business => res.status(200).json(business))
         .catch(error => res.status(500).json(error))
 })
 

@@ -18,7 +18,6 @@ router.post('/create', (req,res) => {
 /****UPDATE THEME****/
 router.put('/update/:id', (req, res) => {
     Theme.update(req.body, { where: { id: req.params.id }})
-
         .then(theme => res.status(200).json(theme))
         .catch(err => res.status(500).json(req.errors))
       
