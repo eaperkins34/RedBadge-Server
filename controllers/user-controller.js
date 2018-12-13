@@ -27,6 +27,31 @@ router.post('/create', (req, res) => {
     )
 })
 
+router.post('/login', (req, res, next) => {
+    User.findOne({ where: {username: req.body.username}})
+        .then(user => {
+            if(user) {
+                bcrypt.compare(req.body.password, user.password, (err, matches) => {
+                    console.log('the value matches:', matches)
+                    if (matches) {
+                        var token = jwt.sign({id: user.id}, process.env.JWT_SECRET, {expiresIn: 60*60*24});
+                        res.json({
+                            user: user,
+                            message: 'successfully logged in',
+                            sessionToken: token
+                        })
+                    } else {
+                    res.status(502).json({message: "Auth failed"})
+                    }
+                })            
+            } else {
+                res.status(500).send({error: "failed to authenticate"})
+            }
+        })
+        .catch(error => res.status(501).json(error))
+        })
+
+
 /******UPDATE USER*******/
 router.put('/update/:id', (req, res) => {
     if(!req.errors) {
