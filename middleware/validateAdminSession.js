@@ -1,13 +1,13 @@
 const jwt = require('jsonwebtoken')
 const User = require('../db').import('../models/user')
 
-const validateSession = (req, res, next) => {
+const validateAdminSession = (req, res, next) => {
   const token = req.headers.authorization
   jwt.verify(token, process.env.JWT_SECRET, (err, decodedToken) => {
     if (!err && decodedToken) {
       User.findOne({ where: { id: decodedToken.id }})
         .then(user => {
-          if (!user) throw 'err'
+          if (user.role != 'admin') throw 'err'
           req.user = user
           return next()
         })
@@ -19,4 +19,4 @@ const validateSession = (req, res, next) => {
   })
 }
 
-module.exports = validateSession
+module.exports = validateAdminSession

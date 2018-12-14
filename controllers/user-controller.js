@@ -2,16 +2,20 @@ var router = require('express').Router();
 var Sequelize = require('../db');
 var bcrypt = require('bcryptjs');
 var jwt = require('jsonwebtoken');
-
+var validateAdminSession = require('../middleware/validateAdminSession')
+var Review = require('../db').import('../models/review')
 var User = Sequelize.import('../models/user.js');
+
+User.hasMany(Review, {as: 'businessReview'})
 
 /******CREATE USER*******/
 
 router.post('/create', (req, res) => {
     User.create({
-        email: req.body.user.email,
-        username: req.body.user.username,
-        password: bcrypt.hashSync(req.body.user.password, 10),
+        email: req.body.email,
+        username: req.body.username,
+        password: bcrypt.hashSync(req.body.password, 10),
+        role: req.body.role
     })
     .then(
         createSuccess = (user) => {
@@ -53,17 +57,9 @@ router.post('/login', (req, res, next) => {
 
 
 /******UPDATE USER*******/
-router.put('/update/:id', (req, res) => {
+router.put('/update/:id', validateAdminSession, (req, res) => {
     if(!req.errors) {
-        User.update({
-            username: req.body.user.username,
-            email: req.body.user.email,
-            password: req.body.user.password,
-            firstName: req.body.user.firstName,
-            lastName: req.body.user.lastName,
-            business: req.body.user.business,
-            phone: req.body.user.phone,
-            role: req.body.user.role},
+        User.update(req.body,
             { where: { id: req.params.id }})
 
             .then(user => res.status(200).json(user))

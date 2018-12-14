@@ -1,8 +1,10 @@
 const router = require('express').Router();
 const Business = require('../db').import('../models/business');
 const Theme = require('../db').import('../models/theme')
+const Review = require('../db').import('../models/review')
 
 Business.hasMany(Theme, {as: 'roomTheme'})
+Business.hasMany(Review, {as: 'businessReview'})
 
 /*****CREATE NEW BUSINESS****/
 router.post('/create', (req, res) => {   

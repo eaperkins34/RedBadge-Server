@@ -7,8 +7,8 @@ const sequelize = require('./db')
 const JWT = require('jwt-login');
 //dave added this delete later
 
-sequelize.sync();
-// sequelize.sync()
+// sequelize.sync({force: true});
+sequelize.sync({force: true})
 
 app.use(bodyParser.json())
 app.use(require ('./middleware/headers'))
@@ -18,6 +18,7 @@ require('./models')
 app.use('/business', require('./controllers/business-controller'))
 app.use('/theme', require('./controllers/theme-controller'))
 app.use('/user', require('./controllers/user-controller'))
+app.use('/reviews', require('./controllers/review-controller'))
 
 
 
