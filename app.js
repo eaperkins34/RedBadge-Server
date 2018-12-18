@@ -5,10 +5,9 @@ const app = express();
 const bodyParser = require('body-parser');
 const sequelize = require('./db')
 const JWT = require('jwt-login');
-//dave added this delete later
 
-// sequelize.sync({force: true});
-
+sequelize.sync();
+// sequelize.sync({force: true})
 
 app.use(bodyParser.json())
 app.use(require ('./middleware/headers'))
