@@ -1,6 +1,6 @@
 # RedBadge-Server
 
-Created using Node.js and Sequelize. This application is the backend to [Escaperoom](https://github.com/professionalluke/Escape-Room-RB),a full CRUD application that locates Escape rooms for those searching for a perfect fit. `version 50.0.1`
+Created using Node.js and Sequelize. This application is the backend to [Escaperoom](https://github.com/professionalluke/Escape-Room-RB), a full CRUD application that locates Escape rooms for those searching for a perfect fit. `version 50.0.1`
 
 ### Prerequisites
 
