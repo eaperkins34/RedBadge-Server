@@ -35,7 +35,7 @@ In your terminal run `nodemon` for your development/test server to start up, by 
 * **Emily Perkins** - [eaperkins34](https://github.com/eaperkins34)
 * **Luke Cureton** - [professionalluke](https://github.com/professionalluke)
 
-Also see the list of [contributors] here(https://github.com/professionalluke/Escape-Room-RB/graphs/contributors) for more about those who participated in this project.
+Also see the list of [contributors] here(https://github.com/professionalluke/RedBadge-Server/graphs/contributors) for more about those who participated in this project.
 
 
 ## License
