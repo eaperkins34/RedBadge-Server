@@ -31,7 +31,7 @@ In your terminal run `nodemon` for your development/test server to start up, by 
 ## Authors
 
 * **Jason Lee** - [mrjasonalee](https://github.com/mrjasonalee)
-* **Keagon Talbot** - [KTalbot11](https://github.com/KTalbot11)
+* **Keagan Talbot** - [KTalbot11](https://github.com/KTalbot11)
 * **Emily Perkins** - [eaperkins34](https://github.com/eaperkins34)
 * **Luke Cureton** - [professionalluke](https://github.com/professionalluke)
 
