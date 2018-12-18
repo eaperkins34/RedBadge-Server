@@ -11,7 +11,7 @@ module.exports = {
             difficulty: "5",
             createdAt: new Date(),
             updatedAt: new Date(),
-            businessId: 8
+            businessId: 7
         },
         {
             name: "The Cabin",
@@ -22,7 +22,7 @@ module.exports = {
             difficulty: "5",
             createdAt: new Date(),
             updatedAt: new Date(),
-            businessId: 8
+            businessId: 7
         },
         {
             name: "Missing Maestro",
@@ -33,7 +33,7 @@ module.exports = {
             difficulty: "5",
             createdAt: new Date(),
             updatedAt: new Date(),
-            businessId: 8
+            businessId: 7
         },
         {
             name: "Submarine",
@@ -44,7 +44,7 @@ module.exports = {
             difficulty: "8",
             createdAt: new Date(),
             updatedAt: new Date(),
-            businessId: 8
+            businessId: 7
         },
         {
             name: "Detective Agency",
@@ -55,7 +55,7 @@ module.exports = {
             difficulty: "4",
             createdAt: new Date(),
             updatedAt: new Date(),
-            businessId: 8
+            businessId: 7
         },
         {
             name: "The Race 1",
@@ -66,7 +66,7 @@ module.exports = {
             difficulty: "1",
             createdAt: new Date(),
             updatedAt: new Date(),
-            businessId: 7
+            businessId: 6
         },
         {
             name: "The Race 2",
@@ -77,7 +77,7 @@ module.exports = {
             difficulty: "1",
             createdAt: new Date(),
             updatedAt: new Date(),
-            businessId: 7
+            businessId: 6
         },
         {
             name: "Stalag 21: American POW",
@@ -88,7 +88,7 @@ module.exports = {
             difficulty: "10",
             createdAt: new Date(),
             updatedAt: new Date(),
-            businessId: 7
+            businessId: 6
         },
         {
             name: "1776",
@@ -99,7 +99,7 @@ module.exports = {
             difficulty: "6",
             createdAt: new Date(),
             updatedAt: new Date(),
-            businessId: 7
+            businessId: 6
         },
         {
             name: "A Night At The Castle",
@@ -110,7 +110,7 @@ module.exports = {
             difficulty: "5",
             createdAt: new Date(),
             updatedAt: new Date(),
-            businessId: 7
+            businessId: 6
         },
         {
             name: "Escape From The Titanic",
@@ -121,7 +121,7 @@ module.exports = {
             difficulty: "2",
             createdAt: new Date(),
             updatedAt: new Date(),
-            businessId: 7
+            businessId: 6
         },
         {
             name: "IU Time Warp 2020",
@@ -132,7 +132,7 @@ module.exports = {
             difficulty: "5",
             createdAt: new Date(),
             updatedAt: new Date(),
-            businessId: 6
+            businessId: 5
         },
         {
             name: "Art Gallery",
@@ -143,7 +143,7 @@ module.exports = {
             difficulty: "6",
             createdAt: new Date(),
             updatedAt: new Date(),
-            businessId: 6
+            businessId: 5
         },
         {
             name: "Bank Heist",
@@ -154,7 +154,7 @@ module.exports = {
             difficulty: "8",
             createdAt: new Date(),
             updatedAt: new Date(),
-            businessId: 6
+            businessId: 5
         },
         {
             name: "Jail Break",
@@ -165,7 +165,7 @@ module.exports = {
             difficulty: "4",
             createdAt: new Date(),
             updatedAt: new Date(),
-            businessId: 6
+            businessId: 5
         },
         {
             name: "KGB Interrogation",
@@ -176,7 +176,7 @@ module.exports = {
             difficulty: "10",
             createdAt: new Date(),
             updatedAt: new Date(),
-            businessId: 6
+            businessId: 5
         },
         {
             name: "Space: 2112",
@@ -187,7 +187,7 @@ module.exports = {
             difficulty: "8",
             createdAt: new Date(),
             updatedAt: new Date(),
-            businessId: 6
+            businessId: 5
         },
         {
             name: "Contagion",
@@ -198,7 +198,7 @@ module.exports = {
             difficulty: "8",
             createdAt: new Date(),
             updatedAt: new Date(),
-            businessId: 6
+            businessId: 5
         },
         {
             name: "Dr. K's Lethal Injection",
@@ -209,7 +209,7 @@ module.exports = {
             difficulty: "8",
             createdAt: new Date(),
             updatedAt: new Date(),
-            businessId: 5
+            businessId: 4
         },
         {
             name: "James Bomb",
@@ -220,7 +220,7 @@ module.exports = {
             difficulty: "5",
             createdAt: new Date(),
             updatedAt: new Date(),
-            businessId: 5
+            businessId: 4
         },
         {
             name: "Asteria's Singularity",
@@ -231,7 +231,7 @@ module.exports = {
             difficulty: "5",
             createdAt: new Date(),
             updatedAt: new Date(),
-            businessId: 5
+            businessId: 4
         },
         {
             name: "Mr. Dupree's Office",
@@ -242,7 +242,7 @@ module.exports = {
             difficulty: "2",
             createdAt: new Date(),
             updatedAt: new Date(),
-            businessId: 5
+            businessId: 4
         },
         {
             name: "The Dig",
@@ -253,7 +253,7 @@ module.exports = {
             difficulty: "N/A",
             createdAt: new Date(),
             updatedAt: new Date(),
-            businessId: 4
+            businessId: 3
         },
         {
             name: "The Agency",
@@ -264,7 +264,7 @@ module.exports = {
             difficulty: "N/A",
             createdAt: new Date(),
             updatedAt: new Date(),
-            businessId: 4
+            businessId: 3
         },
         {
             name: "The Apartment",
@@ -275,7 +275,7 @@ module.exports = {
             difficulty: "N/A",
             createdAt: new Date(),
             updatedAt: new Date(),
-            businessId: 4
+            businessId: 3
         },
         {
             name: "The Rec Room",
@@ -286,7 +286,7 @@ module.exports = {
             difficulty: "N/A",
             createdAt: new Date(),
             updatedAt: new Date(),
-            businessId: 4
+            businessId: 3
         },
         {
             name: "The Kidnapping",
@@ -297,7 +297,7 @@ module.exports = {
             difficulty: "N/A",
             createdAt: new Date(),
             updatedAt: new Date(),
-            businessId: 3
+            businessId: 2
         },
         {
             name: "Operation: Casino",
@@ -308,7 +308,7 @@ module.exports = {
             difficulty: "N/A",
             createdAt: new Date(),
             updatedAt: new Date(),
-            businessId: 3
+            businessId: 2
         },
         {
             name: "Island Escape",
@@ -319,7 +319,7 @@ module.exports = {
             difficulty: "N/A",
             createdAt: new Date(),
             updatedAt: new Date(),
-            businessId: 3
+            businessId: 2
         },
         {
             name: "Museum Heist",
@@ -330,7 +330,7 @@ module.exports = {
             difficulty: "N/A",
             createdAt: new Date(),
             updatedAt: new Date(),
-            businessId: 3
+            businessId: 2
         },
         {
             name: "Hostage",
@@ -341,7 +341,7 @@ module.exports = {
             difficulty: "N/A",
             createdAt: new Date(),
             updatedAt: new Date(),
-            businessId: 3
+            businessId: 2
         },
         {
             name: "Do Not Disturb",
@@ -352,7 +352,7 @@ module.exports = {
             difficulty: "N/A",
             createdAt: new Date(),
             updatedAt: new Date(),
-            businessId: 2
+            businessId: 1
         },
         {
             name: "Kidnapping",
@@ -363,7 +363,7 @@ module.exports = {
             difficulty: "N/A",
             createdAt: new Date(),
             updatedAt: new Date(),
-            businessId: 2
+            businessId: 1
         },
         {
             name: "Island Escape",
@@ -374,7 +374,7 @@ module.exports = {
             difficulty: "N/A",
             createdAt: new Date(),
             updatedAt: new Date(),
-            businessId: 2
+            businessId: 1
         },
         {
             name: "Mystery Mansion",
@@ -385,7 +385,7 @@ module.exports = {
             difficulty: "N/A",
             createdAt: new Date(),
             updatedAt: new Date(),
-            businessId: 2
+            businessId: 1
         },
         {
             name: "Museum Heist",
@@ -396,7 +396,7 @@ module.exports = {
             difficulty: "N/A",
             createdAt: new Date(),
             updatedAt: new Date(),
-            businessId: 2
+            businessId: 1
         },
         {
             name: "Runaway Train",
@@ -407,7 +407,7 @@ module.exports = {
             difficulty: "N/A",
             createdAt: new Date(),
             updatedAt: new Date(),
-            businessId: 2
+            businessId: 1
         },
         {
             name: "Operation: Casino",
@@ -418,30 +418,9 @@ module.exports = {
             difficulty: "N/A",
             createdAt: new Date(),
             updatedAt: new Date(),
-            businessId: 2
-        },
-        {
-            name: "Wizard's Escape",
-            description: "Step aboard the house of a famous young wizard. You have 60 min to find the ancient book from another demension.",
-            minimum: 2,
-            maximum: 10,
-            length: 60,
-            difficulty: "7",
-            createdAt: new Date(),
-            updatedAt: new Date(),
             businessId: 1
         },
-        {
-            name: "Wild Wild West",
-            description: "You and your rowdy Posse of Outlaws are at it again. Making your way through the Wild Wild West you stumble upon this drinking hole. Can you make it out with the loot? You have 60 minutes before the sheriff stops by for a drink.",
-            minimum: 2,
-            maximum: 10,
-            length: 60,
-            difficulty: "8",
-            createdAt: new Date(),
-            updatedAt: new Date(),
-            businessId: 1
-        }], {});
+       ], {});
     },
     down: (queryInterface, Sequelize) => {
         return queryInterface.bulkDelete('themes', null, {})

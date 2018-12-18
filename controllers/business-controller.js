@@ -25,7 +25,7 @@ router.get('/all', (req, res) => {
 })
 
 router.get('/:id', (req, res, next) => {
-    Business.findById(req.params.id)
+    Business.findById((req.params.id), {include: [{all:true}]})
         .then(res.send.bind(res))
         .catch(next);
 })
