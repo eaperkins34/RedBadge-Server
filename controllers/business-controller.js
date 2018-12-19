@@ -46,4 +46,10 @@ router.put('/update/:id', (req, res) => {
     }
 })
 
+router.delete('/delete/:id', (req, res) => {
+    Business.destroy({ where: { id: req.params.id }})
+        .then( business => res.status(200).json(business))
+        .catch( err => res.json(req.errors))
+})
+
 module.exports = router;
