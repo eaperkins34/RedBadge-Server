@@ -2,27 +2,7 @@
 
 module.exports = {
     up: (queryInterface, Sequelize) => {
-        return queryInterface.bulkInsert('businesses', [{
-        name: "Escape This Live Indianapolis",
-        location: "9546 Allisonville Rd #127, Indianapolis, IN 46250",
-        phone: "317-435-5595",
-        hours: ["Monday: 12PM - 9PM", 
-                "Tuesday: 12PM - 9PM", 
-                "Wednesday: 12PM - 9PM", 
-                "Thursday: 12PM - 9PM", 
-                "Friday: 12PM - 12AM",
-                "Saturday: 12PM - 12AM",
-                "Sunday: 12PM - 9PM"],
-        price: 30.00,
-        number_of_rooms: 2,
-        url: "http://www.escapethislive.com/indianapolis/", 
-        themes: [
-            "Wizards Escape",
-            "Wild Wild West"],
-        image: "https://static1.squarespace.com/static/55d1efa2e4b0e5d01c225f7b/t/5716d98c1bbee0d40d762607/1461115277948/escapethislive-logo.png?format=1000w",
-        createdAt: new Date(),
-        updatedAt: new Date()   
-    },
+        return queryInterface.bulkInsert('businesses', [
     {
         name: "Breakout Games - North",
         location: "8455 Castlewood Dr A, Indianapolis, IN 46250",

@@ -21,7 +21,7 @@ module.exports = (sequelize, DataTypes) => {
     phone: DataTypes.STRING,
     role: {
       type: DataTypes.ENUM('user', 'business', 'admin'),
-      defaultValue: 'user'
+      defaultValue: 'user',
     }
   }, {});
   User.associate = function(models) {
