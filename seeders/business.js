@@ -7,27 +7,15 @@ module.exports = {
         name: "Breakout Games - North",
         location: "8455 Castlewood Dr A, Indianapolis, IN 46250",
         phone: "317-672-6060",
-        hours: [
-            "Monday: 12PM - 9PM",
-            "Tuesday: 12PM - 9PM",
-            "Wednesday: 12PM - 9PM",
-            "Thursday: 12PM - 9PM",
-            "Friday: 12PM - 12AM",
-            "Saturday: 12PM - 12AM",
-            "Sunday: 12PM - 9PM"
-        ],
+        hours: 
+            "Monday: 12PM - 9PM,Tuesday: 12PM - 9PM,Wednesday: 12PM - 9PM,Thursday: 12PM - 9PM,Friday: 12PM - 12AM,Saturday: 12PM - 12AM,Sunday: 12PM - 9PM",
+        
         price: 29.99,
         number_of_rooms: 7,
         url: "https://breakoutgames.com/indianapolis/",
-        themes: [
-            "Runaway Train", 
-            "Do Not Disturb", 
-            "Mystery Mansion", 
-            "The Kidnapping", 
-            "Museum Heist", 
-            "Operation: Casino", 
-            "Island Escape"
-        ],
+        themes: 
+            "Runaway Train, Do Not Disturb, Mystery Mansion, The Kidnapping, Museum Heist, Operation: Casino, Island Escape"
+        ,
         image: "https://2m14st1h0x1b30k8dw3a8fxi-wpengine.netdna-ssl.com/wp-content/themes/fm-framework/images/holidays/breakout-holiday-logo-01.png",
         createdAt: new Date(),
         updatedAt: new Date()
@@ -36,25 +24,14 @@ module.exports = {
         name: "Breakout Games - South",
         location: "4770 S Emerson Ave A, Indianapolis, IN 46203",
         phone: "317-960-1950",
-        hours: [
-            "Monday: 10AM - 10:30PM",
-            "Tuesday: 10AM - 10:30PM",
-            "Wednesday: 10AM - 10:30PM",
-            "Thursday: 10AM - 10:30PM",
-            "Friday: 10AM - 11:50PM",
-            "Saturday: 10AM - 11:50PM",
-            "Sunday: 11:30AM - 10:40PM"
-        ],
+        hours: 
+            "Monday: 10AM - 10:30PM, Tuesday: 10AM - 10:30PM, Wednesday: 10AM - 10:30PM, Thursday: 10AM - 10:30PM, Friday: 10AM - 11:50PM, Saturday: 10AM - 11:50PM, Sunday: 11:30AM - 10:40PM",
         price: 29.99,
         number_of_rooms: 5,
         url: "https://breakoutgames.com/indianapolis/",
-        themes: [
-            "The Kidnapping", 
-            "Museum Heist", 
-            "Operation: Casino", 
-            "Island Escape", 
-            "Hostage"
-        ],
+        themes: 
+            "The Kidnapping, Museum Heist, Operation: Casino, Island Escape, Hostage"
+        ,
         image: "https://2m14st1h0x1b30k8dw3a8fxi-wpengine.netdna-ssl.com/wp-content/themes/fm-framework/images/holidays/breakout-holiday-logo-01.png",
         createdAt: new Date(),
         updatedAt: new Date()
@@ -63,24 +40,15 @@ module.exports = {
         name: "Escape the Room",
         location: "525 Massachusetts Ave, Indianapolis, IN 46204",
         phone: "317-960-4801",
-        hours: [
-            "Monday: Closed",
-            "Tuesday: 12PM - 9:30PM",
-            "Wednesday: 12PM - 9:30PM",
-            "Thursday: 12PM - 9:30PM",
-            "Friday: 12PM - 11PM",
-            "Saturday: 12PM - 11PM",
-            "Sunday: 12PM - 9:30PM"
-        ],
+        hours: 
+            "Monday: Closed, Tuesday: 12PM - 9:30PM, Wednesday: 12PM - 9:30PM, Thursday: 12PM - 9:30PM, Friday: 12PM - 11PM, Saturday: 12PM - 11PM, Sunday: 12PM - 9:30PM"
+            ,
         price: 28.00,
         number_of_rooms: 4,
         url: "https://escapetheroom.com/indianapolis/",
-        themes: [
-            "The Dig", 
-            "The Agency", 
-            "The Apartment", 
-            "The Rec Room"
-        ],
+        themes: 
+            "The Dig, The Agency, The Apartment, The Rec Room"
+        ,
         image: "https://media.escapetheroom.com/indianapolis/wp-content/uploads/sites/10/2017/08/escape-logo-1.png",
         createdAt: new Date(),
         updatedAt: new Date()
@@ -89,24 +57,15 @@ module.exports = {
         name: "Escape INDY",
         location: "150 E Market St # 100, Indianapolis, IN 46204",
         phone: "317-610-0904",
-        hours: [
-            "Monday: Closed",
-            "Tuesday: 11AM - 10:15PM",
-            "Wednesday: 11AM - 10:15PM",
-            "Thursday: 11AM - 10:15PM",
-            "Friday: 10AM - 11PM",
-            "Saturday: 10AM - 11PM",
-            "Sunday: 12 - 8:45PM"
-            ],
+        hours: 
+            "Monday: Closed, Tuesday: 11AM - 10:15PM, Wednesday: 11AM - 10:15PM, Thursday: 11AM - 10:15PM, Friday: 10AM - 11PM, Saturday: 10AM - 11PM, Sunday: 12 - 8:45PM"
+            ,
         price: 27.00,
         number_of_rooms: 4,
         url: "https://escape-indy.com/",
-        themes: [
-            "Dr. K's Lethal Injection", 
-            "James Bomb", 
-            "Asteria's Singularity", 
-            "Mr. Dupree's Office"
-            ],
+        themes: 
+            "Dr. K's Lethal Injection, James Bomb, Asteria's Singularity, Mr. Dupree's Office"
+            ,
         image: "https://escape-indy.com/wp-content/themes/escape-indy/images/logo-indy.png",
         createdAt: new Date(),
         updatedAt: new Date()

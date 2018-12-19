@@ -7,11 +7,11 @@ module.exports = (sequelize, DataTypes) => {
     name: DataTypes.STRING,
     location: DataTypes.STRING,
     phone: DataTypes.STRING,
-    hours: DataTypes.ARRAY(DataTypes.TEXT),
+    hours: DataTypes.STRING,
     price: DataTypes.DECIMAL,
     number_of_rooms: DataTypes.INTEGER,
     url: DataTypes.STRING,
-    themes: DataTypes.ARRAY(DataTypes.TEXT),
+    themes: DataTypes.STRING,
     image: DataTypes.STRING
   });
 
