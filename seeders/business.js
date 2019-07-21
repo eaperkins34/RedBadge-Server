@@ -12,7 +12,7 @@ module.exports = {
         number_of_rooms: 7,
         url: "https://breakoutgames.com/indianapolis/",
         themes: "Runaway Train, Do Not Disturb, Mystery Mansion, The Kidnapping, Museum Heist, Operation: Casino, Island Escape",
-        image: "https://2m14st1h0x1b30k8dw3a8fxi-wpengine.netdna-ssl.com/wp-content/themes/fm-framework/images/holidays/breakout-holiday-logo-01.png",
+        image: "https://2m14st1h0x1b30k8dw3a8fxi-wpengine.netdna-ssl.com/wp-content/themes/fm-framework/images/logos/breakout-logo.png",
         createdAt: new Date(),
         updatedAt: new Date()
     },
@@ -25,7 +25,7 @@ module.exports = {
         number_of_rooms: 5,
         url: "https://breakoutgames.com/indianapolis/",
         themes: "The Kidnapping, Museum Heist, Operation: Casino, Island Escape, Hostage",
-        image: "https://2m14st1h0x1b30k8dw3a8fxi-wpengine.netdna-ssl.com/wp-content/themes/fm-framework/images/holidays/breakout-holiday-logo-01.png",
+        image: "https://2m14st1h0x1b30k8dw3a8fxi-wpengine.netdna-ssl.com/wp-content/themes/fm-framework/images/logos/breakout-logo.png",
         createdAt: new Date(),
         updatedAt: new Date()
     },

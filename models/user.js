@@ -17,7 +17,8 @@ module.exports = (sequelize, DataTypes) => {
     },  
     firstName: DataTypes.STRING,
     lastName: DataTypes.STRING,
-    business: DataTypes.ENUM('Escape This Live Indianapolis', 'Breakout Games-North', 'Breakout Games-South', 'Escape the Room', 'Escape INDY', 'The Escape Room - Indianapolis', 'The Escape Room - Fishers', 'Twisted Room Escapes'),
+    business: DataTypes.ENUM('Escape This Live Indianapolis', 'Breakout Games-North', 'Breakout Games-South', 'Escape the Room', 'Escape INDY', 
+          'The Escape Room - Indianapolis', 'The Escape Room - Fishers', 'Twisted Room Escapes'),
     phone: DataTypes.STRING,
     role: {
       type: DataTypes.ENUM('user', 'business', 'admin'),
